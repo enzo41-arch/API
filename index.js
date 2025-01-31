@@ -18,9 +18,7 @@ app.get('/produits', (req, res) => {
 
 // POST
 app.post('/produits', (req, res) => {
-    const newProduit = req.body;
     produits.push(newProduit);
-    res.status(201).json(newProduit);
 });
 
 // PUT /produits id
